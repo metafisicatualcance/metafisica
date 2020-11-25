@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <title>Metafísica al Alcance de todos</title> 
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script async>(function(w, d) { w.CollectId = "5e82a83a080ddb1058a71dd9"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+        <script type="text/javascript" src="http://c.fzilla.com/1286136086-jquery.js"/></script>
+        <script type="text/javascript" src="http://c.fzilla.com/1291523190-jpaginate.js"></script>
+       <link rel="icon" href="img/cruz.png">
+    <script src="js/num.js"></script>
+    <script src="js/fecha.js"></script>
+    <script src="js/decretos.js"></script>
+          
+
+    <section class="divprincipalmenu" id="barmenu">
+        <ul class="nav">
+            <li><a style="color:White" ><img class="imgmenu" src="/img/favicon.png" alt="">Metafísica a tu Alcance</a></li>
+            <li class="inicio" ><a href="#metafisica" title="">Inicio</a></li>
+            <li class="yosoy"><a href="#yosoy" title="">Yo soy</a></li>
+            <li class="dec"><a href="#decretos" title="">Decretos</a></li>
+            <li class="numia"><a onClick="scroll(10, 100);" id="" href="#numerologia" title="">Numerología</a></li>
+            <li class="maestros"><a href="#" title="">Maestros</a></li>
+            <li class="libros"><a href="#" title="">Libros</a></li>
+            <li class="blog"><a href="#" title="">Blog</a></li>
+        </ul>
+    </section>
+</head>
+<body>
+    
+    <div class="social">
+		<ul>
+			<li><a href="http://www.facebook.com/falconmasters" target="_blank" class="icon-facebook"><img class="iconor"src="img/fb.png"></a></li>
+			<li><a href="http://www.facebook.com/falconmasters" target="_blank" class="icon-facebook"><img class="iconor"src="img/in.png"></a></li>
+			<li><a href="http://www.facebook.com/falconmasters" target="_blank" class="icon-facebook"><img class="iconor"src="img/tw.png"></a></li>
+			
+		</ul>
+	</div>
+    <header class="cont-slider">
+        <section class="slider">
+          <article class="slide uno"><span>Astrología</span></article><!--
+          --><article class="slide dos"><span>Leyes Universales</span></article><!--
+          --><article class="slide tres"><span>Yoga</span></article><!--
+          --><article class="slide cuatro"><span>Meditación</span></article><!--
+          --><article class="slide cinco"><span>Decretos</span></article>
+        </section>
+        <div id="slider">by ESA/Hubble</div>
+    </header>   
+     <!--Numerología  -->
+    <section id="numerologia" class="card-body">
+        <div id="contenedor">
+        <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+        <label for="tab-1" class="tab-label-1">Mi Nombre</label>
+        <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+        <label for="tab-2" class="tab-label-2">Mi Fecha de Nacimiento</label>
+        <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+        <label for="tab-3" class="tab-label-3">Pestaña3</label>
+        <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+        <label for="tab-4" class="tab-label-4">Pestaña4</label>
+        <div class="content">
+        <div class="content-1">
+         <base href="http://127.0.0.1:8887/">
+        <!-- <div id="nombres"></div>                
+        <div id="esquema"></div> -->
+        <div id="add"></div>
+        <form id="content-1" class="promt" name="form">
+        <h1>Ingresa tu nombre</h1>
+        <input type="text"; class="form-control" id="textname" required minlength="3" value=" ">
+        <img id="button" style="cursor: pointer" class="btn btn-success" src="img/busca.ico"onclick="addnombre()">      
+        <input type="reset" style="cursor: pointer;" src="img/borrador.png"onclick="limpiar()"class="btn btn-danger"title="limpiar">      
+        <h3>Tu expresión </h3>
+        <p id="textonum" class="textonum"></p>
+        <p id="cont" class="cont"></p>
+        <p id="mensaje"></p>
+        <p id="resultado" class="expresion"></p>
+        <h3>EL IDEAL - vocales es: </h3>
+        <p id="ok" class="ok"></p>
+        <br>
+        <h3>Ser Latente - consonantes es: </h3>
+        <p id="consonantes" class="consonantes"></p>
+        <br>
+        </form>
+        </div>
+        <div id="content-2" class="content-2">
+        <h1>Ingresa tu fecha de nacimiento</h1>
+        <input type="date"; class="fecha" id="fecha" required minlength="1"> 
+        <img style="cursor: pointer" src="img/busca.ico"class="submit"onclick="sacarfecha()">      
+        <input type="reset" style="cursor: pointer;" src="img/borrador.png"onclick="limpiarfecha()"class="limpiar"title="limpiar">      
+        <p id="impf" class="impf"></p>
+        <p id="final" class="final"></p>
+        </div>
+        <div class="content-3">
+            Contenido3
+        </div>
+        <div class="content-4">
+            Contenido4
+        </div>
+        </div>
+        </div>
+</section>
+<!--fin Numerología  -->
+<section id="yosoy" class="card-body">
+    <div id="conty">
+        <input id="tab1" type="radio" name="radio-set" class="tab-selector1" checked="checked" />
+        <label for="tab1" class="tab-label1">Aspectos de Dios y Leyes universales</label>
+       
+        <input id="tab2" type="radio" name="radio-set" class="tab-selector2" />
+        <label for="tab2" class="tab-label2">Presencia YO SOY</label>
+       
+        <input id="tab3" type="radio" name="radio-set" class="tab-selector3" />
+        <label for="tab3" class="tab-label3">7 Rayos</label>
+       
+        <input id="tab4" type="radio" name="radio-set" class="tab-selector4" />
+        <label for="tab4" class="tab-label4">7 Cuerpos y 7 Planos</label>
+                               
+                               
+        <div class="conten">
+            <div class="content1">
+                <video controls class="video">
+                    <source src="video/Increase Brain Power, Focus Music, Reduce Anxiety, Binaural and Isochronic Beats.mp4" type="video/mp4">
+                    Tu navegador no implementa el elemento <code>video</code>.
+                  </video>                                                                                                 
+            </div>
+            <div class="content2">
+                    
+                Contenido2
+            </div>
+            <div class="content3">
+                Contenido3
+            </div>
+            <div class="content4">
+                Contenido4
+            </div>
+        </div>
+    </div>
+                                          
+</section>
+
+<section id="decretos" class="card-body">
+        <form class="promt" name="formdec">
+        <!-- <input type="text"; class="form-control" id="filtrar" required minlength="4" value=" "> -->
+        <input id="filtrar" type="text" class="form-control" placeholder="Ingresa palabra clave ejemplo: juicio">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Decretos</th>
+                    
+              </tr>
+            </thead>
+            <tbody class="buscar">
+                     <tr><td>Reclamar lo que te pertenece</td><td><p>"PADRE, YA TÚ DISPUSISTE QUE YO TUVIERA ESTO. DESEO EN ARMONÍA PARA TODOS, BAJO LA GRACIA Y DE MANERA PERFECTA QUE SEA MANIFESTADO, GRACIAS PADRE QUE YA ME OÍSTE Y SIEMPRE ME OYES"</p></td><td>
+                    <tr><td>Antes de dormir</td><td><p>"PERDONO A TODO EL QUE NECESITE MI PERDÓN. A TODO HOMBRE, MUJER O NIÑO. ME PERDONO YO MISMO Y PIDO PERDÓN AL PADRE"</p></td><td>
+                    <tr><td>Enfermedad</td><td><p>" CUANDO HAYA UN ENFERMO: CÚRALO PENSANDO EN QUE ÉL ES VIDA: “NO PUEDES ESTAR MANIFESTANDO UNA MENTIRA”"</p></td>
+                    <tr><td>Invocar la verdad</td><td><p>"invoca a Dios mismo, “SÁLVAME. NO QUIERO DAÑAR A NADIE. TÚ NO PUEDES NI OBLIGARME A MENTIR, NI PRODUCIRME PROBLEMAS POR LEALTAD HACIA TI”"</p></td>
+                    <tr><td>Siguiendo un juicio</td><td><p>"expresándose una opinión o sospeches un engaño: AFIRMA QUE LA VERDAD SE ENCUENTRA EN PLENA CIRCUNSTANCIA PORQUE LA VERDAD ES DIOS Y ESTÁ EN TODAS PARTES"</p></td>
+                    <tr><td>librarse del mal</td><td><p>"BENDIGO EL BIEN EN ESTA SITUACIÓN (O CONDICIÓN) Y QUIERO VERLO"</p></td>
+                    <tr><td>Evitar daño</td><td><p>"DI MENTALMENTE: “TE ENVUELVO EN MI CÍRCULO DE AMOR”"</p></td>
+                    <tr><td>Reparar cosas</td><td><p>"PARA REPARAR TU CUERPO, ARTEFACTOS, PLANTAS, ANIMALES Y OTROS: RECORDÁNDOLE QUE SON INTELIGENCIA TIENES LA INTELIGENCIA DIVINA Y NO PUEDES MARCHAR CONTRARIO A ELLA. FUISTE INVENTADA PARA TRAER ARMONÍA A MI VIDA Y NO PUEDE SER QUE DESARMONICE"</p></td>
+                    <tr><td>Niños con malas notas</td><td><p>"Cuando los niños estén trayendo malas notas en los estudios: se les debe hablar al Yo Superior en ellos y recordarles que Él (YO SOY) es la Inteligencia Divina."</p></td>
+
+               
+              </tbody>
+        <br>
+        </form>
+</section>
+
+<div id="footer"></div>   
+</body>
+</html>
